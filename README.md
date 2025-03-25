@@ -4,7 +4,7 @@ Hoja de trabajo 7 Binary Search Tree
 
 # Funcionamiento
 
-
+![Untitledvideo-MadewithClipchamp-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/703f96d1-6266-4f66-a9cb-71ea4443a09c)
 
 # Ejecución
 
