@@ -19,14 +19,14 @@ mvn package
 *Bash*
 
 ```bash
-mvn exec:java -Dexec.mainClass="com.interpreter.api.App"
+mvn exec:java -Dexec.mainClass="hdt7.App"
 ```
 
 
 *PowerShell*
 
 ```bash
-mvn exec:java '-Dexec.mainClass="com.interpreter.api.App"'
+mvn exec:java '-Dexec.mainClass="hdt7.App"'
 ```
 
 **Test**
