@@ -1,15 +1,13 @@
 package hdt7;
-
 import java.util.ArrayList;
 import java.util.Scanner;
 
 public class App {
     public static void main(String[] args) {
-
         BinaryTree<HomeAppliances> tree = new BinaryTree<HomeAppliances>();
         CsvController csvController = new CsvController();
         ArrayList<HomeAppliances> homeAppliances = csvController
-                .getFromCsv("./bst/src/main/java/hdt7/resources/home_appliances.csv");
+                .getFromCsv("./src/main/java/hdt7/resources/home_appliances.csv");
         System.out.println("Home Appliances: " + homeAppliances.size());
         Boolean flag = true;
         Scanner scanner = new Scanner(System.in);

@@ -20,13 +20,12 @@ public class CsvController {
 
                     String priceRetailStr = values[9].trim(); 
                     String priceCurrentStr = values[10].trim();
-
-                    double priceRetail = priceRetailStr.isEmpty() ? 0.0 : Double.parseDouble(priceRetailStr);
-                    double priceCurrent = priceCurrentStr.isEmpty() ? 0.0 : Double.parseDouble(priceCurrentStr);
-                    long sku = Long.parseLong(values[6]);
+                
+                    double priceRetail = priceRetailStr.isEmpty() ? 0 : Double.parseDouble(priceRetailStr);
+                    double priceCurrent = priceCurrentStr.isEmpty() ? 0 : Double.parseDouble(priceCurrentStr);
                     
                     HomeAppliances homeAppliance = new HomeAppliances(
-                        values[0], values[1], values[2], values[3], values[4], values[5], sku, values[7], values[8], priceRetail, priceCurrent, values[11], values[12], values[13], values[14], values[15], values[16], Integer.parseInt(values[17]), values[18], values[19]
+                         values[0], values[1], values[2], values[3], values[4], values[5], values[6], values[7], values[8], priceRetail, priceCurrent, values[11], values[12], values[13], values[14], values[15], values[16], Integer.parseInt(values[17]), values[18], values[19]
                     );
                     appliances.add(homeAppliance);  
                 } catch (NumberFormatException e) {

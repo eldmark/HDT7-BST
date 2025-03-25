@@ -7,7 +7,7 @@ public class HomeAppliances implements Comparable<HomeAppliances> {
     private String runStartDate;
     private String subcategory;
     private String shippingLocation;
-    private long sku;
+    private String sku;
     private String country;
     private String brand;
     private double priceRetail;
@@ -21,7 +21,7 @@ public class HomeAppliances implements Comparable<HomeAppliances> {
     private int bestsellerRank;
     private String productName;
     private String websiteUrl;
-    public HomeAppliances(String category, String dateScraped, String sortBy, String runStartDate, String subcategory, String shippingLocation, long sku, 
+    public HomeAppliances(String category, String dateScraped, String sortBy, String runStartDate, String subcategory, String shippingLocation, String sku, 
     String country, String brand, double priceRetail, double priceCurrent, String seller, String productUrl, String 
     currency, String breadcrumbs, String department, String promotion, int bestsellerRank, String productName, String websiteUrl) {
         this.category = category;
@@ -84,10 +84,10 @@ public class HomeAppliances implements Comparable<HomeAppliances> {
     public void setShippingLocation(String shippingLocation) {
         this.shippingLocation = shippingLocation;
     }
-    public long getSku() {
+    public String getSku() {
         return sku;
     }
-    public void setSku(long sku) {
+    public void setSku(String sku) {
         this.sku = sku;
     }
     public String getCountry() {
@@ -170,7 +170,7 @@ public class HomeAppliances implements Comparable<HomeAppliances> {
     }
     @Override
     public int compareTo(HomeAppliances o) {
-        return Long.compare(this.sku, o.sku);
+        return this.sku.equals(o.getSku()) ? 0: -1;
     }
     
 }
